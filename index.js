@@ -1,5 +1,5 @@
-var cacheName = 'shell-conten1';
-var DatacacheName = 'fecthData1';
+var cacheName = 'shell-conten';
+var DatacacheName = 'fecthData';
 var filesToCache = [
 
 

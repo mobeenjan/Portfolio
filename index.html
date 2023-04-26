@@ -42,33 +42,33 @@
 
       })
 
-    caches.match(`https://api.github.com/users/${user.value}/followers`)
-      .then(function (response) {
-        if (!response) {
-          console.log('No Data')
-        }
-        console.log('Cache Data')
-        console.log(response)
-        //r//eturn response.json();
-      })
-      .then(function (data) {
+//     caches.match(`https://api.github.com/users/${user.value}/followers`)
+//       .then(function (response) {
+//         if (!response) {
+//           console.log('No Data')
+//         }
+//         console.log('Cache Data')
+//         console.log(response)
+//         //r//eturn response.json();
+//       })
+//       .then(function (data) {
 
-        // $('#data').text(data)
+//         // $('#data').text(data)
 
-        console.log('data from cache = ', data)
-      })
-      .catch(function (err) {
-        console.log('Error ', err)
-      })
-    if ('serviceWorker' in navigator) {
-      navigator.serviceWorker.register('/index.js').then(function (registration) {
-        // Registration was successful
-        console.log('ServiceWorker registration successful with scope: ', registration.scope);
-      }).catch(function (err) {
-        // registration failed :(
-        console.log('ServiceWorker registration failed: ', err);
-      });
-    }
+//         console.log('data from cache = ', data)
+//       })
+//       .catch(function (err) {
+//         console.log('Error ', err)
+//       })
+//     if ('serviceWorker' in navigator) {
+//       navigator.serviceWorker.register('/index.js').then(function (registration) {
+//         // Registration was successful
+//         console.log('ServiceWorker registration successful with scope: ', registration.scope);
+//       }).catch(function (err) {
+//         // registration failed :(
+//         console.log('ServiceWorker registration failed: ', err);
+//       });
+//     }
 
 
 
